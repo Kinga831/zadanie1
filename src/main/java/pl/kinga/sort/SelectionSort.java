@@ -23,9 +23,9 @@ public class SelectionSort {
 
     private static int findIndexOfMaximumValue(int[] array) {
         int indexOfCurrentMaximumValue = 0;
-        for (int j = 0; j < array.length; j++) {
-            if (array[j] > array[indexOfCurrentMaximumValue]) {
-                indexOfCurrentMaximumValue = j;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > array[indexOfCurrentMaximumValue]) {
+                indexOfCurrentMaximumValue = i;
             }
         }
         return indexOfCurrentMaximumValue;
